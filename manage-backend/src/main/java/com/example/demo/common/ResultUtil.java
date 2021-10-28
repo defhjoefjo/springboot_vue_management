@@ -8,7 +8,7 @@ public class ResultUtil {
 
     public static <T> Result<T> success(T data) {
         Result result = new Result();
-        result.setCode(ResultEnum.SUCCESS).setData(data);
+        result.setCode(ResultEnum.SUCCESS).setData(data).setMsg("success!");
         return result;
     }
 
